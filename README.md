@@ -1,6 +1,6 @@
 # Pagina_web
 
-Actualmente hay un servidor de Django vacio
+Actualmente hay un servidor de Django vacío
 
 Los pasos seguidos para su creación fueron
 
