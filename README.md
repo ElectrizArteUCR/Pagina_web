@@ -47,4 +47,4 @@ Starting development server at http://127.0.0.1:8000/
 ### Si lo desean pueden abrir el servidor en otro puerto si ya tienen otro servidor corriendo en el 8000
 > py manage.py runserver 8080
 
-### Y pueden acceder a la pagina de admin agregando admin en el path del url anterior y  los credenciales mostrados arriba podrán ver la consola admin default de django donde se puede ver la base de datos y más adelante las apps! :)
+### Y pueden acceder a la pagina de admin agregando admin en el path del url anterior y con los credenciales mostrados arriba podrán ver la consola admin default de django donde se puede ver la base de datos y más adelante las apps! :)
