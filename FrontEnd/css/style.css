@@ -319,14 +319,13 @@ a:focus {
     padding-bottom: 5px;
 }
 
-.page-header h2::after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 2px;
-    left: calc(50% - 50px);
-    bottom: 0;
-    background: #030f27;
+
+
+.page-header p {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #ffffff;
 }
 
 .page-header a {
@@ -335,7 +334,6 @@ a:focus {
     font-size: 22px;
     color: #ffffff;
 }
-
 
 @media (max-width: 991.98px) {
     .page-header {
@@ -426,7 +424,7 @@ a:focus {
 }
 
 .feature .col-md-12:nth-child(2n) {
-    color: #709e97;
+    color: #ffffff;
     background: #709e97;
 }
 
@@ -436,38 +434,6 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.feature .feature-icon {
-    position: relative;
-    width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.feature .feature-icon::before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 80px;
-    top: -20px;
-    left: -10px;
-    border: 2px dotted #709e97;
-    border-radius: 60px;
-    z-index: 1;
-}
-
-.feature .feature-icon::after {
-    position: absolute;
-    content: "";
-    width: 79px;
-    height: 79px;
-    top: -18px;
-    left: -9px;
-    background: #709e97;
-    border-radius: 60px;
-    z-index: 2;
 }
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
@@ -512,11 +478,14 @@ a:focus {
 /********** About CSS **********/
 /*******************************/
 .about {
+    background: 103637;
     position: relative;
     width: 100%;
     padding: 45px 0;
 }
-
+.about .col-md-12 {
+    background: #103637;
+}
 .about .section-header {
     margin-bottom: 30px;
 }
@@ -666,7 +635,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #709e97;
+    background: #ffffff;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -678,7 +647,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 18px;
     font-weight: 700;
-    color: #709e97;
+    color: #89302c;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -696,7 +665,7 @@ a:focus {
     line-height: 60px;
     font-weight: 100;
     color: #030f27;
-    background: #fdbe33;
+    background: #eba421;
     border-radius: 0;
     transition: .3s;
 }
@@ -708,7 +677,7 @@ a:focus {
 .blog .blog-meta {
     position: relative;
     padding: 25px 0 10px 0;
-    background: #709e97;
+    background: #f3f6ff;
 }
 
 .blog .blog-meta::after {
@@ -718,7 +687,7 @@ a:focus {
     height: 1px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #709e97;
+    background: #fdbe33;
 }
 
 .blog .blog-meta p {
@@ -728,7 +697,7 @@ a:focus {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
-    color: #709e97;
+    color: #666666;
 }
 
 .blog .blog-meta p a {
@@ -738,7 +707,7 @@ a:focus {
 
 .blog .blog-text {
     padding: 10px 25px 25px 25px;
-    background: #709e97;
+    background: #f3f6ff;
 }
 
 .blog .blog-text p {
@@ -749,17 +718,17 @@ a:focus {
 .blog .pagination .page-link {
     color: #030f27;
     border-radius: 0;
-    border-color: #709e97;
+    border-color: #fdbe33;
 }
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-    color: #709e97;
-    background: #709e97;
+    color: #fdbe33;
+    background: #030f27;
 }
 
 .blog .pagination .disabled .page-link {
-    color: #709e97;
+    color: #999999;
 }
 
 
