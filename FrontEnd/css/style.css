@@ -2,9 +2,9 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #666666;
-    background: #dddddd;
-    font-family: 'Barlow Condensed';font-size: 22px;
+    color: #103637;
+    background: #103637;
+    font-family: 'Barlow', sans-serif; font-size: 22px;
     font-weight: 400;
 }
 
@@ -14,18 +14,18 @@ h3,
 h4,
 h5,
 h6 {
-    color: #ffffff;
+    color: #103637;
 }
 
 a {
-    color: #666666;
+    color: #103637;
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #fdbe33;
+    color: #103637;
     outline: none;
     text-decoration: none;
 }
@@ -39,14 +39,14 @@ a:focus {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
-    background: #103637; \*color del background
+    background: #fff; \*color del background
 }
 
 .back-to-top {
     position: fixed;
     display: none;
     background: #103637;
-    color: #121518;
+    color: #ffffff;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -60,7 +60,7 @@ a:focus {
 
 .back-to-top:hover {
     color: #103637;
-    background: #121518;
+    background: #ffffff;
 }
 
 .back-to-top i {
@@ -77,7 +77,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #000000  ;
+    background: #103637  ;
     transition: .3s;
 }
 
@@ -96,7 +96,7 @@ a:focus {
 
 .nav-bar .navbar {
     height: 100%;
-    background: #000000  !important;
+    background: #103637  !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -122,7 +122,7 @@ a:focus {
 
 .nav-bar .btn {
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 0;
 }
 
@@ -304,15 +304,15 @@ a:focus {
 /*******************************/
 .page-header {
     position: relative;
-    margin-bottom: 45px;
-    padding: 90px 0;
+    margin-bottom: 65px;
+    padding: 130px 0;
     text-align: center;
     background: #709e97;
 }
 
 .page-header h2 {
     position: relative;
-    color: #030f27;
+    color: #103637;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -377,8 +377,8 @@ a:focus {
 }
 
 .page-header .page-header-text a.btn:hover {
-    color: #eba421;
-    background: #103637;
+    color: #103637;
+    background: #ffffff;
 }
 
 /*******************************/
@@ -391,13 +391,14 @@ a:focus {
 }
 
 .section-header p {
-    color: #ffffff;
+    color: #333132;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .section-header h2 {
+    color: #103637;
     margin: 0;
     position: relative;
     font-size: 50px;
@@ -478,13 +479,15 @@ a:focus {
 /********** About CSS **********/
 /*******************************/
 .about {
-    background: 103637;
+    background: #ffffff;
     position: relative;
     width: 100%;
     padding: 45px 0;
 }
+
+
 .about .col-md-12 {
-    background: #103637;
+    background: #ffffff;
 }
 .about .section-header {
     margin-bottom: 30px;
@@ -495,15 +498,28 @@ a:focus {
     height: 100%;
 }
 
+.about .about-img1 {
+    position: right;
+    float: right;
+    padding: 10px; margin: 10px; float: right; width: 250px;
+    height: 100%;
+}
+
 .about .about-img img {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.about .about-img1 img {
+    width: 90%;
+    height: 90%;
     object-fit: cover;
 }
 
 .about .about-text p {
-    font-size: 16px;
-    color: #ffffff;
+    font-size: 20px;
+    color: #333132;
 
 }
 
@@ -515,6 +531,14 @@ a:focus {
     }
 }
 
+@media (max-width: 767.98px) {
+    .about .about-img1 {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
@@ -523,7 +547,7 @@ a:focus {
     margin: 40px 0;
     padding: 70px 0;
     text-align: center;
-    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/Inicio.jpg);
+    background: linear-gradient(rgba(3, 10, 30, .8), rgba(3, 10, 30, .8)), url(../img/Inicio.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -611,6 +635,7 @@ a:focus {
 /*******************************/
 .blog {
     position: relative;
+    background: #103637;
     width: 100%;
     padding: 45px 0 15px 0;
 }
@@ -641,13 +666,37 @@ a:focus {
     text-overflow: ellipsis;
 }
 
+.blog .blog-title1 {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #103637;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.blog .blog-title1 h2 {
+    margin: 100;
+    padding: 10 25px 10 25px;
+    width: calc(100% - 60px);
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .blog .blog-title h3 {
     margin: 0;
     padding: 0 15px 0 25px;
     width: calc(100% - 60px);
     font-size: 18px;
     font-weight: 700;
-    color: #89302c;
+    color: #eba421;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -664,7 +713,7 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #030f27;
+    color: #ffffff;
     background: #eba421;
     border-radius: 0;
     transition: .3s;
@@ -677,7 +726,7 @@ a:focus {
 .blog .blog-meta {
     position: relative;
     padding: 25px 0 10px 0;
-    background: #f3f6ff;
+    background: #ffffff;
 }
 
 .blog .blog-meta::after {
@@ -687,7 +736,7 @@ a:focus {
     height: 1px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #fdbe33;
+    background: #ffffff;
 }
 
 .blog .blog-meta p {
@@ -697,7 +746,7 @@ a:focus {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
-    color: #666666;
+    color: #ffffff;
 }
 
 .blog .blog-meta p a {
@@ -706,8 +755,9 @@ a:focus {
 }
 
 .blog .blog-text {
+
     padding: 10px 25px 25px 25px;
-    background: #f3f6ff;
+    background: #ffffff;
 }
 
 .blog .blog-text p {
@@ -716,19 +766,19 @@ a:focus {
 }
 
 .blog .pagination .page-link {
-    color: #030f27;
+    color: #ffffff;
     border-radius: 0;
-    border-color: #fdbe33;
+    border-color: #ffffff;
 }
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
-    color: #fdbe33;
-    background: #030f27;
+    color: #ffffff;
+    background: #ffffff;
 }
 
 .blog .pagination .disabled .page-link {
-    color: #999999;
+    color: #ffffff;
 }
 
 
@@ -928,7 +978,9 @@ a:focus {
 /********* Service CSS *********/
 /*******************************/
 .service {
+    background: 103637;
     position: relative;
+    background: 103637;
     width: 100%;
     padding: 45px 0 15px 0;
 }
@@ -977,7 +1029,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #fffff;
+    background: #ffffff;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1006,14 +1058,14 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 100;
-    color: #ffffff;
-    background: #ffffff;
+    color: #103637;
+    background: #103637;
     border-radius: 0;
     transition: .3s;
 }
 
 .service .service-item:hover a.btn {
-    color: #ffffff;
+    color: #103637;
 }
 
 /*******************************/
@@ -1309,9 +1361,9 @@ a:focus {
 
 .footer h2 {
     position: relative;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: #103637;
 }
@@ -1319,8 +1371,8 @@ a:focus {
 .footer h2::after {
     position: absolute;
     content: "";
-    width: 60px;
-    height: 2px;
+    width: 70px;
+    height: 4px;
     left: 0;
     bottom: 0;
     background: #103637;
@@ -1328,8 +1380,8 @@ a:focus {
 
 .footer .footer-link a {
     display: block;
-    margin-bottom: 10px;
-    color: #ffffff;
+    margin-bottom: 20px;
+    color: #103637;
     transition: .3s;
 }
 
@@ -1338,136 +1390,42 @@ a:focus {
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .footer .footer-link a:hover {
     color: #103637;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 }
 
 .footer .footer-contact p i {
-    width: 25px;
+    width: 35px;
 }
 
 .footer .footer-social {
     position: relative;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .footer .footer-social a {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 7px 0;
     text-align: center;
-    border: 1px solid rgba(256, 256, 256, .3);
-    border-radius: 60px;
     transition: .3s;
 }
 
 .footer .footer-social a i {
-    font-size: 15px;
+    font-size: 25px;
     color: #ffffff;
 }
 
 .footer .footer-social a:hover {
-    background: #103637;
-    border-color: #103637;
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .footer .footer-social a:hover i {
-    color: #103637;
-}
-
-.footer .newsletter .form {
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.footer .newsletter input {
-    height: 50px;
-    border: 2px solid #121518;
-    border-radius: 0;
-}
-
-.footer .newsletter .btn {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    height: 50px;
-    padding: 8px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fdbe33;
-    background: #121518;
-    border-radius: 0;
-    border: 2px solid #fdbe33;
-    transition: .3s;
-}
-
-.footer .newsletter .btn:hover {
-    color: #103637;
-    background: #fdbe33;
-}
-
-.footer .footer-menu .f-menu {
-    position: relative;
-    padding: 15px 0;
-    font-size: 0;
-    text-align: center;
-    border-top: 1px solid rgba(256, 256, 256, .1);
-    border-bottom: 1px solid rgba(256, 256, 256, .1);
-}
-
-.footer .footer-menu .f-menu a {
-    color: #ffffff;
-    font-size: 16px;
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
-}
-
-.footer .footer-menu .f-menu a:hover {
-    color: #fdbe33;
-}
-
-.footer .footer-menu .f-menu a:last-child {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
-}
-
-
-.footer .copyright {
-    padding: 40px 25px;
-}
-
-.footer .copyright p {
-    margin: 10;
-    color: #ffffff;
-}
-
-.footer .copyright .col-md-6:last-child p {
-    text-align: right;
-}
-
-.footer .copyright p a {
-    color: #103637;
-    font-weight: 100;
-    letter-spacing: 2px;
-}
-
-.footer .copyright p a:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .footer .copyright p,
-    .footer .copyright .col-md-6:last-child p {
-        margin: 0px 0;
-        text-align: center;
-    }
+    color: #709e97;
 }
