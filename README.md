@@ -1,4 +1,28 @@
 # Pagina_web
+En la carpeta front end encontrarán el proyecto del front end, el cual ha sido desarrollado en HTML5 y CSS, con un poco de Bootstrap y Javascript.
+
+Se tienen 5 carpetas:
+
+### css
+Aqui está un archivo con el estilo general de la página
+
+### img
+Las imágenes utilizadas para la página
+
+### js
+Archivo de Javascript
+
+### lib
+Librerias utilizadas en los diferentes archivos
+
+### mail
+Archivos de Bootstrap y Javascript para adaptar la página a diferentes dispositivos.
+
+> Archivos .html son las diferentes páginas creadas para el proyecto.
+
+-Para ver el front end solo debe de clickear alguno de los archivos .html y este se abrirá en su navegador.
+-Para editar este proyecto debe contar con un editor de texto.
+
 
 Actualmente hay un servidor de Django vacío
 
