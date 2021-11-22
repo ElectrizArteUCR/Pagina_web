@@ -18,10 +18,14 @@ Librerias utilizadas en los diferentes archivos
 ### mail
 Archivos de Bootstrap y Javascript para adaptar la página a diferentes dispositivos.
 
-> Archivos .html son las diferentes páginas creadas para el proyecto.
+#Archivos .html son las diferentes páginas creadas para el proyecto.
 
 -Para ver el front end solo debe de clickear alguno de los archivos .html y este se abrirá en su navegador.
+
 -Para editar este proyecto debe contar con un editor de texto.
+
+
+
 
 
 Actualmente hay un servidor de Django vacío
